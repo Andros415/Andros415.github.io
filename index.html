@@ -56,17 +56,52 @@
    <div class="container center-align" id="projects">
      <h2 class="sectionheader">Projects</h2>
    </div>
+   <div class="container center-align" id="resume">
+     <h2 class="sectionheader">Resume</h2>
+   </div>
+   <div class="fixed-action-btn">
+     <a class="btn-floating btn-large" id="backtotop"><i class="large material-icons">expand_less</i></a>
+   </div>
   </main>
   <footer class="page-footer">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
           <h5 class="white-text">Follow Me Elsewhere</h5>
-          <img src="static/images/email.png" class="small"alt="">
+          <a href="https://github.com/andros415" class="footerlink"><img src="static/images/github.png" alt="github"></a>
+          <a href="https://www.linkedin.com/in/andrei-s/" class="footerlink"><img src="static/images/linkedin.png" alt="Linkedin"></a>
+          <a href="mailto:andrei.spatariu4@gmail.com" class="footerlink"><img src="static/images/email.png" alt="email"></a>
         </div>
       </div>
     </div>
+      <div class="footer-copyright">
+        <div class="container">
+          <small>Website created by Andrei Spatariu. Footer Icons provided by <a href="https://icons8.com/" class="footerlink">Icons8</a>.</small>
+        </div>
+      </div>
   </footer>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    $(window).scroll(function() {
+      if($(window).scrollTop() + $(window).height() == $(document).height()) {
+        $("#backtotop").addClass("pulse");
+      }
+      else {
+        $("#backtotop").removeClass("pulse");
+      }
+    });
+    $(window).scroll(function() {
+      if($(window).scrollTop() > 50) {
+        $("#backtotop").addClass("fade-in");
+        $("#backtotop").removeClass("fade-out");
+      }
+      else {
+        $("#backtotop").removeClass("fade-in");
+        $("#backtotop").addClass("fade-out");
+      }
+    });
+  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   </body>
 </html>

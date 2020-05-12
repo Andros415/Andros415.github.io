@@ -35,13 +35,13 @@ main {
 
 #downarrow {
   text-align: center;
-  margin-top: 250px;
+  margin-top: 200px;
   animation: scrolldown 3s ease-in-out infinite;
 }
 
 @keyframes scrolldown {
   0% {
-    transform: translateY(0px);
+    transform: translateY(20px);
   }
   40%, 80% {
     transform: translateY(50px);
@@ -59,4 +59,24 @@ h5 {
   background: linear-gradient(#ffffff, #38dbf2);
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 2s ease;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 2s ease;
+}
+
+.footerlink {
+  color: white;
+  opacity:  1.0;
+  transition: opacity 0.25s ease-in-out;
+}
+
+.footerlink:hover {
+  opacity:0.6;
 }
