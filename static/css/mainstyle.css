@@ -17,11 +17,25 @@ main {
   margin-bottom: 30vh;
 }
 
+#about, #interests, #experience, #projects {
+  margin-top: 30vh;
+  margin-bottom: 30vh;
+}
+
+ #resume {
+   margin-bottom: 10vh;
+ }
+
 #header {
   font-size: 7em;
   background: linear-gradient(#e6a92f, #38dbf2);
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
+}
+
+#profilepic {
+  width: 100%;
+  border-radius: 50px;
 }
 @media (max-width:900px)
 {
@@ -55,14 +69,29 @@ h5 {
   font-weight: 300;
 }
 
+
+.interesticon {
+  background: linear-gradient(#f7b740, #9c5fee);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+  border-radius: 50%;
+  border: 3px solid #f7d0a3;
+  padding: 25px;
+}
+
 .sectionheader {
   background: linear-gradient(#ffffff, #38dbf2);
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
+  margin-bottom: 40px;
+}
+
+#backtotop {
+  opacity: 0;
 }
 
 .fade-in {
-  opacity: 1;
+  opacity: 1 !important;
   transition: opacity 2s ease;
 }
 
