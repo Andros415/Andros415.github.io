@@ -9,6 +9,9 @@ module.exports = {
       colors: {
         midnight: "#0f172a",
       },
+      maxWidth: {
+        mobile: "85%",
+      },
     },
     plugins: [],
   },
