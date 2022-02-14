@@ -7,7 +7,7 @@ module.exports = {
         handwriting: ["Shadows Into Light", "cursive"],
       },
       colors: {
-        midnight: "#0f172a",
+        noir: "#182848",
       },
       maxWidth: {
         mobile: "85%",

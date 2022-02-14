@@ -3,7 +3,10 @@ import profilePic from "../../static/aboutPic.jpg";
 
 function About(): ReactElement {
   return (
-    <div className="flex min-h-screen min-w-full items-center justify-evenly">
+    <div
+      className="flex min-h-screen min-w-full items-center justify-evenly"
+      id="About"
+    >
       <div className="hidden lg:block">
         <img
           className="h-96 w-80 rounded-3xl"
@@ -24,7 +27,7 @@ function About(): ReactElement {
           </p>
           <p>
             Outside of work, I enjoy listening to music 🎵, playing video games
-            🎮, and watching/playing tennis 🎾.
+            🎮, traveling &#128747;, and watching/playing tennis 🎾.
           </p>
           <p>
             Feel free to check out what I'm currently delving into, or my latest
