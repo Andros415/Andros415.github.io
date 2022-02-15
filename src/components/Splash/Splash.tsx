@@ -1,6 +1,5 @@
 import React, { ReactElement } from "react";
 import Typist from "react-typist";
-import expand_down from "../../static/materialIcons/expand_circle_down.svg";
 
 function Splash(): ReactElement {
   return (
@@ -17,11 +16,9 @@ function Splash(): ReactElement {
           </Typist>
         </div>
         <a href="#About">
-          <img
-            className="mx-auto mt-20 hover:cursor-pointer motion-safe:animate-bounce"
-            src={expand_down}
-            alt="Expand Down"
-          />
+          <span className="material-icons-outlined mt-20 text-5xl hover:cursor-pointer motion-safe:animate-bounce">
+            expand_circle_down
+          </span>
         </a>
       </div>
     </div>

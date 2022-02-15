@@ -4,9 +4,9 @@ import { github, linkedin, email } from "../../static/socialIcons";
 
 function Footer(): ReactElement {
   return (
-    <footer className="min-w-full flex items-center justify-center pb-5">
-      <div className="text-white text-center space-y-3">
-        <h3 className="font-handwriting text-4xl">Follow me elsewhere</h3>
+    <footer className="flex min-w-full items-center justify-center pb-5">
+      <div className="space-y-3 text-center text-white">
+        <h1 className="font-handwriting text-4xl">Follow me elsewhere</h1>
         <div className="flex items-center justify-evenly pb-2">
           <SocialIcons
             link="https://github.com/Andros415"
@@ -32,7 +32,7 @@ function Footer(): ReactElement {
             href="https://icons8.com/"
             target="_blank"
             rel="noreferrer"
-            className="hover:opacity-80 transition-opacity"
+            className="transition-opacity hover:opacity-80"
           >
             Icons8
           </a>
@@ -41,7 +41,7 @@ function Footer(): ReactElement {
             href="https://devicon.dev/"
             target="_blank"
             rel="noreferrer"
-            className="hover:opacity-80 transition-opacity"
+            className="transition-opacity hover:opacity-80"
           >
             Devicon
           </a>
