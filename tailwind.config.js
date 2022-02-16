@@ -8,6 +8,7 @@ module.exports = {
       },
       colors: {
         noir: "#182848",
+        teal: "#3bbbaa",
       },
       maxWidth: {
         mobile: "85%",

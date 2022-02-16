@@ -2,6 +2,7 @@ import "./App.css";
 import Splash from "./components/Splash";
 import About from "./components/About";
 import Footer from "./components/Footer";
+import FloatingActionButton from "./components/FloatingActionButton";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Splash />
       <About />
       <Footer />
+      <FloatingActionButton />
     </div>
   );
 }
