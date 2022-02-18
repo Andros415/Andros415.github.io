@@ -8,7 +8,7 @@ function Splash(): ReactElement {
         <h1 className="mb-7 bg-gradient-to-r from-[#61F4DE] to-[#64ACFF] bg-clip-text font-main text-5xl font-bold tracking-wider text-transparent sm:text-7xl">
           Andrei Spatariu
         </h1>
-        <div className="font-handwriting text-4xl sm:text-5xl">
+        <div className="m-auto max-w-mobile font-handwriting text-4xl sm:max-w-full sm:text-5xl">
           <Typist cursor={{ show: false }}>
             <span>Full-stack Web Developer</span>
             <Typist.Backspace count={25} delay={7500} />
