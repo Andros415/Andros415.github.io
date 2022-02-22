@@ -51,7 +51,7 @@ function Experience(): ReactElement {
         className="rounded-full bg-cyan-500 px-12 py-3 font-main text-xl transition-colors hover:bg-cyan-400"
         onClick={() => window.open(`${Resume}`, "_blank")}
       >
-        R&eacute;sum&eacute;
+        View My R&eacute;sum&eacute;
       </button>
     </div>
   );

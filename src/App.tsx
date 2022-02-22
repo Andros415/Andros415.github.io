@@ -1,4 +1,5 @@
 import "./App.css";
+import Navbar from "./components/Navbar";
 import Splash from "./components/Splash";
 import About from "./components/About";
 import Experience from "./components/Experience";
@@ -8,6 +9,7 @@ import FloatingActionButton from "./components/FloatingActionButton";
 function App() {
   return (
     <div className="bg-gradient-to-t from-noir to-slate-900">
+      <Navbar />
       <Splash />
       <About />
       <Experience />
