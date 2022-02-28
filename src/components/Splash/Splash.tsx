@@ -1,4 +1,5 @@
 import React, { ReactElement } from "react";
+import { HashLink } from "react-router-hash-link";
 import Typist from "react-typist";
 
 function Splash(): ReactElement {
@@ -15,11 +16,11 @@ function Splash(): ReactElement {
             <span>University of Georgia Alumni 🐾</span>
           </Typist>
         </div>
-        <a href="#About">
+        <HashLink to="#About">
           <span className="material-icons-outlined mt-20 text-5xl hover:cursor-pointer motion-safe:animate-bounce">
             expand_circle_down
           </span>
-        </a>
+        </HashLink>
       </div>
     </div>
   );
