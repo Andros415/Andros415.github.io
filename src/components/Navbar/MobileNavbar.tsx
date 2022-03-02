@@ -1,4 +1,4 @@
-import React, { ReactElement, useState } from "react";
+import React, { ReactElement } from "react";
 import { HashLink } from "react-router-hash-link";
 
 interface NavbarLink {
@@ -18,8 +18,8 @@ const MobileNavbar = ({
   return (
     <div
       className={`fixed top-[76px] z-10 ${
-        isOpen ? "flex" : "hidden"
-      } m align-center min-w-full flex-col space-y-3 bg-slate-900/95 p-5 pl-6 font-handwriting text-3xl text-white backdrop-blur-sm transition md:hidden`}
+        isOpen ? "opacity-100" : "opacity-0"
+      } align-center flex min-w-full flex-col space-y-4 bg-slate-900/95 pb-5 pl-5 font-handwriting text-3xl text-white backdrop-blur-sm transition md:hidden`}
     >
       {NavbarLinks.map((NavLink) => (
         <HashLink
