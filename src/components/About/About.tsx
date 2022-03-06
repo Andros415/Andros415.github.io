@@ -7,7 +7,7 @@ function About(): ReactElement {
       className="flex min-h-screen min-w-full scroll-mt-5 items-center justify-evenly"
       id="About"
     >
-      <div className="hidden lg:block">
+      <div className="hidden -rotate-3 transition hover:rotate-0 hover:scale-105 lg:block">
         <img
           className="h-96 w-80 rounded-3xl"
           src={profilePic}

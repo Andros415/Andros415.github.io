@@ -25,7 +25,7 @@ function FloatingActionButton(): ReactElement {
       id="FAB"
     >
       <button
-        className="flex h-[56px] w-[56px] items-center justify-center rounded-full bg-teal hover:bg-[#5fbeb2] disabled:cursor-default"
+        className="flex h-[56px] w-[56px] items-center justify-center rounded-full bg-teal transition-colors hover:bg-[#5fbeb2] disabled:cursor-default"
         onClick={() => window.scrollY > 350 && window.scrollTo(0, 0)}
         disabled={isDisabled}
       >

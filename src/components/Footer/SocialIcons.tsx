@@ -16,7 +16,7 @@ const SocialIcons = ({
       href={link}
       target="_blank"
       rel="noreferrer"
-      className="hover:opacity-80 transition-opacity"
+      className="transition hover:scale-110"
     >
       <img src={imageSrc} alt={altName} />
     </a>
