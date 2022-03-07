@@ -4,7 +4,7 @@ import { github, linkedin, email } from "../../static/socialIcons";
 
 function Footer(): ReactElement {
   return (
-    <footer className="flex min-w-full items-center justify-center pb-5">
+    <footer className="flex min-w-full items-center justify-center p-5">
       <div className="space-y-3 text-center text-white">
         <h1 className="font-handwriting text-4xl">Follow me elsewhere</h1>
         <div className="flex items-center justify-evenly pb-2">

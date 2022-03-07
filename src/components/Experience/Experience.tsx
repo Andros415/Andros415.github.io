@@ -20,7 +20,7 @@ function Experience(): ReactElement {
         />
         <TimelineItem
           company="University of Georgia"
-          position="Undegraduate Student - Computer Science"
+          position="Undergraduate Student - Computer Science"
           startYear="2016"
           endYear="2019"
           gridPositionClasses="md:row-start-2 md:col-start-2 md:col-span-3"
@@ -46,13 +46,17 @@ function Experience(): ReactElement {
           gridPositionClasses="md:row-start-5 md:col-start-5 md:col-span-3"
         />
       </div>
-      <h2 className="font-handwriting text-4xl">For more details...</h2>
-      <button
-        className="rounded-full bg-cyan-500 px-12 py-3 font-main text-xl transition-colors hover:bg-cyan-400"
-        onClick={() => window.open(`${Resume}`, "_blank")}
-      >
-        View My R&eacute;sum&eacute;
-      </button>
+      <div className="space-y-6">
+        <h2 className="text-center font-handwriting text-4xl">
+          For more details...
+        </h2>
+        <button
+          className="rounded-full bg-cyan-500 px-12 py-3 font-main text-xl transition-colors hover:bg-cyan-400"
+          onClick={() => window.open(`${Resume}`, "_blank")}
+        >
+          View My R&eacute;sum&eacute;
+        </button>
+      </div>
     </div>
   );
 }
