@@ -2,6 +2,7 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Splash from "./components/Splash";
 import About from "./components/About";
+import SkillsAndInterests from "./components/SkillsAndInterests";
 import Experience from "./components/Experience";
 import Footer from "./components/Footer";
 import FloatingActionButton from "./components/FloatingActionButton";
@@ -12,6 +13,7 @@ function App() {
       <Navbar />
       <Splash />
       <About />
+      <SkillsAndInterests />
       <Experience />
       <Footer />
       <FloatingActionButton />

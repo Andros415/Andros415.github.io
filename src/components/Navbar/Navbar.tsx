@@ -10,7 +10,7 @@ const NavbarLinks = [
   },
   {
     name: `Skills ${String.fromCharCode(38)} Interests`,
-    link: "#Skills",
+    link: "#SkillsAndInterests",
   },
   {
     name: "Projects",
