@@ -13,6 +13,9 @@ module.exports = {
       maxWidth: {
         mobile: "85%",
       },
+      width: {
+        mobile: "85%",
+      },
     },
     plugins: [],
   },
