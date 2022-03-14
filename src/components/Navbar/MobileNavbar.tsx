@@ -1,4 +1,4 @@
-import React, { ReactElement } from "react";
+import React, { Dispatch, ReactElement } from "react";
 import { HashLink } from "react-router-hash-link";
 
 interface NavbarLink {
@@ -9,11 +9,13 @@ interface NavbarLink {
 interface MobileNavbarProps {
   NavbarLinks: Array<NavbarLink>;
   isOpen: boolean;
+  onSetNavbarExpanded: Dispatch<boolean>;
 }
 
 const MobileNavbar = ({
   NavbarLinks,
   isOpen,
+  onSetNavbarExpanded,
 }: MobileNavbarProps): ReactElement => {
   return (
     <div
@@ -25,7 +27,13 @@ const MobileNavbar = ({
         <HashLink
           key={NavLink.name}
           to={NavLink.link}
-          className="transition-colors hover:underline hover:decoration-teal hover:underline-offset-4"
+          scroll={(el) => {
+            el.scrollIntoView({ behavior: "smooth" });
+            onSetNavbarExpanded(false);
+          }}
+          className={`transition-colors ${
+            !isOpen ? "hidden" : ""
+          } hover:underline hover:decoration-teal hover:underline-offset-4`}
         >
           {NavLink.name}
         </HashLink>

@@ -11,7 +11,7 @@ function Experience(): ReactElement {
       <h1 className="text-center font-main text-5xl font-bold tracking-wider">
         Experience
       </h1>
-      <div className="mx-3 grid gap-4 md:mx-10 lg:grid-cols-7">
+      <div className="m-4 grid gap-4 md:mx-10 lg:grid-cols-7">
         <TimelineItem
           company="NCR"
           position="Intern"

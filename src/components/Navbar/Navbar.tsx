@@ -49,7 +49,11 @@ function Navbar(): ReactElement {
           dark_mode
         </span>
       </nav>
-      <MobileNavbar NavbarLinks={NavbarLinks} isOpen={isNavbarExpanded} />
+      <MobileNavbar
+        NavbarLinks={NavbarLinks}
+        isOpen={isNavbarExpanded}
+        onSetNavbarExpanded={setIsNavbarExpanded}
+      />
     </>
   );
 }

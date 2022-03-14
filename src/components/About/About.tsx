@@ -14,7 +14,7 @@ function About(): ReactElement {
           alt="Andrei Spatariu"
         />
       </div>
-      <div className="max-w-mobile font-main text-white md:max-w-prose">
+      <div className="mb-6 max-w-mobile font-main text-white md:max-w-prose">
         <h1 className="text-center text-5xl font-bold tracking-wider">About</h1>
         <div className="mt-4 space-y-5 text-xl">
           <p>Hey there!</p>
