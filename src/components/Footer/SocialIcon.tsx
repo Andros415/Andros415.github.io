@@ -1,16 +1,16 @@
 import React, { ReactElement } from "react";
 
-interface SocialIconsProps {
+interface SocialIconProps {
   link: string;
   imageSrc: string;
   altName: string;
 }
 
-const SocialIcons = ({
+const SocialIcon = ({
   link,
   imageSrc,
   altName,
-}: SocialIconsProps): ReactElement => {
+}: SocialIconProps): ReactElement => {
   return (
     <a
       href={link}
@@ -23,4 +23,4 @@ const SocialIcons = ({
   );
 };
 
-export default SocialIcons;
+export default SocialIcon;

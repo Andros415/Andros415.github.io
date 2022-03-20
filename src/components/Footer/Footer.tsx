@@ -1,5 +1,5 @@
 import React, { ReactElement } from "react";
-import SocialIcons from "./SocialIcons";
+import SocialIcon from "./SocialIcon";
 import { github, linkedin, email } from "../../static/socialIcons";
 
 function Footer(): ReactElement {
@@ -8,17 +8,17 @@ function Footer(): ReactElement {
       <div className="space-y-3 text-center text-white">
         <h1 className="font-handwriting text-4xl">Follow me elsewhere</h1>
         <div className="flex items-center justify-evenly pb-2">
-          <SocialIcons
+          <SocialIcon
             link="https://github.com/Andros415"
             imageSrc={github}
             altName="GitHub Icon"
           />
-          <SocialIcons
+          <SocialIcon
             link="https://www.linkedin.com/in/andrei-s/"
             imageSrc={linkedin}
             altName="LinkedIn Icon"
           />
-          <SocialIcons
+          <SocialIcon
             link="mailto:andrei.spatariu4@gmail.com"
             imageSrc={email}
             altName="Email Icon"
