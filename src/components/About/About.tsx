@@ -30,8 +30,15 @@ function About(): ReactElement {
             🎮, traveling &#128747;, and watching/playing tennis 🎾.
           </p>
           <p>
-            Feel free to check out what I'm currently delving into, or my latest
-            projects down below.
+            Feel free to check out what I'm&nbsp;
+            <span className="bg-gradient-to-r from-[#61F4DE] to-[#1fddff] bg-clip-text font-bold text-transparent">
+              currently delving into
+            </span>
+            , or
+            <span className="bg-gradient-to-r from-[#ff7170] to-[#ffe57f] bg-clip-text font-bold text-transparent">
+              &nbsp;my latest projects&nbsp;
+            </span>
+            down below.
           </p>
           <p className="font-handwriting text-4xl tracking-wider">
             &mdash; Andrei
