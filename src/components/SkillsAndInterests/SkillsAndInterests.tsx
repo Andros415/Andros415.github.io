@@ -1,5 +1,7 @@
-import React, { ReactElement } from "react";
+import React, { ReactElement, useState } from "react";
 import InterestAreaCard from "./InterestAreaCard";
+import SkillRowSelector from "./SkillRowSelector";
+import SkillRow from "./SkillRow";
 
 const InterestsList = [
   {
@@ -26,11 +28,14 @@ const InterestsList = [
     description: `Nowadays, there's petabytes of data being collected or scraped from the web every day. 
     Similar to how user feedback drives the evolution of UIs, machine learning is a powerful tool to help us 
     to turn this data into smarter, optimized decisions. It's also an area that's constantly evolving and that's 
-    why I enjoy delving into it from time to time (plus it's a perfect excuse to use Python again 😉).`,
+    why I enjoy delving into it from time to time (plus it's a perfect excuse to use Python again 🐍).`,
   },
 ];
 
+const DEFAULT_SKILL_SET = "Languages & Tools I'm delving into";
+
 function SkillsAndInterests(): ReactElement {
+  const [skillSet, setSkillSet] = useState(DEFAULT_SKILL_SET);
   return (
     <div
       className="min-h-screen min-w-full scroll-mt-20 text-center text-white"
@@ -39,6 +44,11 @@ function SkillsAndInterests(): ReactElement {
       <h1 className="font-main text-5xl font-bold tracking-wider">
         Skills & Interests
       </h1>
+      <SkillRowSelector
+        selectedSkillSet={skillSet}
+        onSelectSkillSet={setSkillSet}
+      />
+      <SkillRow selectedSkillSet={skillSet} />
       <h2 className="mx-auto my-8 max-w-mobile font-handwriting text-4xl">
         Areas that pique my interest
       </h2>
