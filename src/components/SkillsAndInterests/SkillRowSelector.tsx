@@ -26,19 +26,19 @@ function SkillRowSelector({
           </span>
         </Listbox.Button>
         <Transition
-          enter="transition duration-100 ease-out"
+          enter="transition duration-100"
           enterFrom="transform scale-95 opacity-0"
           enterTo="transform scale-100 opacity-100"
-          leave="transition duration-75 ease-out"
+          leave="transition duration-100"
           leaveFrom="transform scale-100 opacity-100"
           leaveTo="transform scale-95 opacity-0"
         >
-          <Listbox.Options className="absolute z-10 -mt-4 space-y-5 rounded-lg bg-slate-900/90 px-4 py-5 font-handwriting text-3xl shadow-md backdrop-blur-sm lg:left-6 lg:w-11/12">
+          <Listbox.Options className="absolute z-10 -mt-4 space-y-3 rounded-lg bg-slate-900/90 px-4 py-5 font-handwriting text-3xl shadow-md backdrop-blur-sm lg:left-6 lg:w-11/12">
             {SkillSetOptions.map((option) => (
               <Listbox.Option
                 className={({ active, selected }) =>
-                  `cursor-pointer transition-colors ${
-                    active ? "text-teal" : ""
+                  `cursor-pointer p-1 transition-colors ${
+                    active ? "rounded-lg bg-white/5 text-teal" : ""
                   } ${selected ? "text-gray-500" : ""}`
                 }
                 key={option}
