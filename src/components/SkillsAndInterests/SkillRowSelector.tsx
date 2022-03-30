@@ -39,7 +39,7 @@ function SkillRowSelector({
                 className={({ active, selected }) =>
                   `cursor-pointer p-1 transition-colors ${
                     active ? "rounded-lg bg-white/5 text-teal" : ""
-                  } ${selected ? "text-gray-500" : ""}`
+                  } ${selected ? "cursor-not-allowed text-gray-500" : ""}`
                 }
                 key={option}
                 value={option}

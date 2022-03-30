@@ -13,7 +13,7 @@ enum SkillSetOptions {
 
 function SkillRow({ selectedSkillSet }: SkillRowProps): ReactElement {
   return (
-    <div className="mx-auto grid grid-cols-2 gap-4 text-8xl sm:flex sm:flex-wrap sm:content-center sm:justify-evenly">
+    <div className="mx-auto grid grid-cols-2 gap-4 text-8xl sm:mx-8 sm:flex sm:flex-wrap sm:content-center sm:justify-evenly">
       {selectedSkillSet === SkillSetOptions.DELVING_IN && (
         <>
           <SkillIcon name="tailwindcss" type="plain" caption="Tailwind CSS" />
