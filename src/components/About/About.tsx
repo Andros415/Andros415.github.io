@@ -4,7 +4,7 @@ import profilePic from "../../static/aboutPic.jpg";
 function About(): ReactElement {
   return (
     <div
-      className="flex min-h-screen min-w-full scroll-mt-5 items-center justify-evenly"
+      className="flex min-h-screen min-w-full scroll-mt-12 items-center justify-evenly"
       id="About"
     >
       <div className="hidden -rotate-3 transition hover:rotate-0 hover:scale-105 lg:block">
