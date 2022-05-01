@@ -32,7 +32,7 @@ function Footer(): ReactElement {
             href="https://icons8.com/"
             target="_blank"
             rel="noreferrer"
-            className="transition-opacity hover:opacity-80"
+            className="transition-colors duration-200 hover:text-teal"
           >
             Icons8
           </a>
@@ -41,7 +41,7 @@ function Footer(): ReactElement {
             href="https://devicon.dev/"
             target="_blank"
             rel="noreferrer"
-            className="transition-opacity hover:opacity-80"
+            className="transition-colors duration-200 hover:text-teal"
           >
             Devicon
           </a>
