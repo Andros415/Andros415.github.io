@@ -11,7 +11,15 @@ type LanguagePercentSizeObj = {
 
 type IconType = "plain" | "original" | "plain-wordmark" | "original-wordmark";
 
-const useLanguageData = ({ languageURL }: LanguageRowProps) => {
+interface useLanguageDataReturn {
+  languagePercentData: LanguagePercentSizeObj;
+  matchIconType: (language: string) => IconType;
+  matchLanguageName: (language: string) => string;
+}
+
+const useLanguageData = ({
+  languageURL,
+}: LanguageRowProps): useLanguageDataReturn => {
   const [languagePercentData, setLanguagePercentData] =
     useState<LanguagePercentSizeObj>({});
 

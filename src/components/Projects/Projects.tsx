@@ -4,7 +4,7 @@ import ProjectCard from "./ProjectCard";
 import useProjectData from "./use.project.data";
 
 function Projects(): ReactElement {
-  const { projectData } = useProjectData();
+  const { projectData, loading } = useProjectData();
 
   return (
     <div
@@ -35,6 +35,7 @@ function Projects(): ReactElement {
                   key={project.name}
                   type="Recent"
                   project={project}
+                  loading={loading}
                 />
               ))}
             </div>
@@ -46,6 +47,7 @@ function Projects(): ReactElement {
                   key={project.name}
                   type="Starred"
                   project={project}
+                  loading={loading}
                 />
               ))}
             </div>

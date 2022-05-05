@@ -12,10 +12,12 @@ export interface GithubProject {
 
 interface useProjectDataReturn {
   projectData: { Recent: GithubProject[]; Starred: GithubProject[] };
+  loading: boolean;
 }
 
 const useProjectData = (): useProjectDataReturn => {
   const [projectData, setProjectData] = useState({ Recent: [], Starred: [] });
+  const [loading, setLoading] = useState(true);
 
   const fetchProjectData = async () => {
     const projRes = await fetch(
@@ -69,6 +71,7 @@ const useProjectData = (): useProjectDataReturn => {
         Recent: projectDataFiltered,
         Starred: starredDataFiltered,
       });
+      setLoading(false);
     });
   };
 
@@ -79,7 +82,7 @@ const useProjectData = (): useProjectDataReturn => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  return { projectData };
+  return { projectData, loading };
 };
 
 export default useProjectData;
