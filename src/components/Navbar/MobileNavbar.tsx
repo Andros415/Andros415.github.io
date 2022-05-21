@@ -19,7 +19,7 @@ const MobileNavbar = ({
 }: MobileNavbarProps): ReactElement => {
   return (
     <div
-      className={`fixed top-[76px] z-20 ${
+      className={`fixed top-[75px] z-20 ${
         isOpen ? "opacity-100" : "opacity-0"
       } align-center flex min-w-full flex-col space-y-4 bg-slate-900/95 pb-5 pl-5 font-handwriting text-3xl text-white backdrop-blur-sm transition md:hidden`}
     >

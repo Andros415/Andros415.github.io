@@ -2,6 +2,7 @@ import React, { ReactElement, useState } from "react";
 import { HashLink } from "react-router-hash-link";
 import HamburgerButton from "./HamburgerButton";
 import MobileNavbar from "./MobileNavbar";
+import ThemeSelector from "./ThemeSelector";
 
 const NavbarLinks = [
   {
@@ -45,9 +46,7 @@ function Navbar(): ReactElement {
             {NavLink.name}
           </HashLink>
         ))}
-        <span className="material-icons-outlined text-3xl text-white transition-colors hover:cursor-pointer hover:text-teal">
-          dark_mode
-        </span>
+        <ThemeSelector isNavbarExpanded={isNavbarExpanded} />
       </nav>
       <MobileNavbar
         NavbarLinks={NavbarLinks}
