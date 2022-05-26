@@ -7,14 +7,14 @@ function About(): ReactElement {
       className="flex min-h-screen min-w-full scroll-mt-12 items-center justify-evenly"
       id="About"
     >
-      <div className="hidden -rotate-3 transition hover:rotate-0 hover:scale-105 lg:block">
+      <div className="hidden -rotate-3 drop-shadow-lg transition hover:rotate-0 hover:scale-105 lg:block">
         <img
           className="h-96 w-80 rounded-3xl"
           src={profilePic}
           alt="Andrei Spatariu"
         />
       </div>
-      <div className="mb-6 max-w-mobile font-main text-white md:max-w-prose">
+      <div className="mb-6 max-w-mobile font-main text-slate-800 dark:text-white md:max-w-prose">
         <h1 className="text-center text-5xl font-bold tracking-wider">About</h1>
         <div className="mt-4 space-y-5 text-xl">
           <p>Hey there!</p>
@@ -31,11 +31,11 @@ function About(): ReactElement {
           </p>
           <p>
             Feel free to check out what I'm&nbsp;
-            <span className="bg-gradient-to-r from-[#61F4DE] to-[#1fddff] bg-clip-text font-bold text-transparent">
+            <span className="bg-gradient-to-r from-violet-500 to-rose-600 bg-clip-text font-bold text-transparent dark:from-[#61F4DE] dark:to-[#1fddff]">
               currently delving into
             </span>
             , or
-            <span className="bg-gradient-to-r from-[#ff7170] to-[#ffe57f] bg-clip-text font-bold text-transparent">
+            <span className="bg-gradient-to-r from-fuchsia-500 to-sky-500 bg-clip-text font-bold text-transparent dark:from-[#ff7170] dark:to-[#ffe57f]">
               &nbsp;my latest projects&nbsp;
             </span>
             down below.

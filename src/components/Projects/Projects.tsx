@@ -8,18 +8,20 @@ function Projects(): ReactElement {
 
   return (
     <div
-      className="mt-14 min-h-screen min-w-full scroll-mt-28 text-center font-main text-white"
+      className="mt-14 min-h-screen min-w-full scroll-mt-28 text-center font-main text-slate-800 dark:text-white"
       id="Projects"
     >
       <h1 className="text-5xl font-bold tracking-wider">Projects</h1>
       <Tab.Group>
-        <Tab.List className="mx-auto mt-8 flex max-w-mobile space-x-5 rounded-xl bg-black/20 p-2 text-2xl sm:max-w-md">
+        <Tab.List className="mx-auto mt-8 flex max-w-mobile space-x-5 rounded-xl bg-black/10 p-2 text-2xl dark:bg-black/20 sm:max-w-md">
           {Object.keys(projectData).map((sortType) => (
             <Tab
               key={sortType}
               className={({ selected }) =>
-                `basis-1/2 p-3 transition-colors ${
-                  selected ? "rounded-lg bg-white/5 text-teal" : ""
+                `basis-1/2 rounded-xl p-3 transition-colors hover:bg-black/5 dark:hover:bg-white/5 ${
+                  selected
+                    ? "rounded-lg bg-black/5 text-emerald-500 dark:bg-white/5 dark:text-teal"
+                    : ""
                 }`
               }
             >

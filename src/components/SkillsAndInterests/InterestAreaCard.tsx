@@ -14,8 +14,8 @@ function InterestAreaCard({
   const [isCardFlipped, setIsCardFlipped] = useState(false);
   return (
     <div
-      className={`relative w-mobile rounded-lg border border-slate-500/50 bg-slate-500/50 p-4 font-main shadow-md 
-      backdrop-blur-sm transition duration-300 hover:-translate-y-2 hover:cursor-pointer hover:shadow-xl hover:shadow-sky-200/10 sm:h-72 sm:max-w-md sm:hover:-skew-y-1 
+      className={`relative w-mobile rounded-lg border border-slate-500/20 dark:border-slate-500/50 bg-stone-200/50 dark:bg-slate-500/50 p-4 font-main shadow-md 
+      backdrop-blur-sm transition duration-300 hover:-translate-y-2 hover:cursor-pointer hover:shadow-xl dark:hover:shadow-sky-200/10 sm:h-72 sm:max-w-md sm:hover:-skew-y-1 
       ${isCardFlipped ? "-scale-x-100" : ""}`}
       onClick={() => setIsCardFlipped(!isCardFlipped)}
     >

@@ -1,4 +1,5 @@
 import "./App.css";
+import { ThemeProvider } from "./components/ThemeProvider";
 import Navbar from "./components/Navbar";
 import Splash from "./components/Splash";
 import About from "./components/About";
@@ -10,15 +11,17 @@ import FloatingActionButton from "./components/FloatingActionButton";
 
 function App() {
   return (
-    <div className="bg-gradient-to-t from-noir to-slate-900">
-      <Navbar />
-      <Splash />
-      <About />
-      <SkillsAndInterests />
-      <Projects />
-      <Experience />
-      <Footer />
-      <FloatingActionButton />
+    <div className="bg-lightBase bg-lightScheme dark:bg-gradient-to-t dark:from-noir dark:to-slate-900">
+      <ThemeProvider>
+        <Navbar />
+        <Splash />
+        <About />
+        <SkillsAndInterests />
+        <Projects />
+        <Experience />
+        <Footer />
+        <FloatingActionButton />
+      </ThemeProvider>
     </div>
   );
 }

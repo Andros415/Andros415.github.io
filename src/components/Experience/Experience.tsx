@@ -5,7 +5,7 @@ import Resume from "../../static/Resume.pdf";
 function Experience(): ReactElement {
   return (
     <div
-      className="flex min-h-screen min-w-full scroll-mt-16 flex-col items-center justify-evenly text-white"
+      className="flex min-h-screen min-w-full scroll-mt-16 flex-col items-center justify-evenly text-slate-800 dark:text-white"
       id="Experience"
     >
       <h1 className="text-center font-main text-5xl font-bold tracking-wider">
@@ -51,7 +51,7 @@ function Experience(): ReactElement {
           For more details...
         </h2>
         <button
-          className="rounded-full bg-cyan-500 px-12 py-3 font-main text-xl transition-colors hover:bg-cyan-400"
+          className="rounded-full bg-emerald-400 px-12 py-3 font-main text-xl text-white drop-shadow-lg transition-colors hover:bg-emerald-500 dark:bg-[#64ACFF] dark:hover:bg-blue-400/80"
           onClick={() => window.open(`${Resume}`, "_blank")}
         >
           View My R&eacute;sum&eacute;

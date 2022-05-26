@@ -28,7 +28,7 @@ function SkillIcon({
         style={{ fontSize: size }}
       />
       {caption && (
-        <p className="font-main text-lg transition group-hover:opacity-100 sm:opacity-0">
+        <p className="pointer-events-none font-main text-lg transition group-hover:opacity-100 sm:opacity-0">
           {caption}
         </p>
       )}

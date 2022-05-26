@@ -5,8 +5,8 @@ import Typist from "react-typist";
 function Splash(): ReactElement {
   return (
     <div className="flex min-h-screen min-w-full items-center justify-center">
-      <div className="text-center text-white">
-        <h1 className="mb-7 bg-gradient-to-r from-[#61F4DE] to-[#64ACFF] bg-clip-text font-main text-5xl font-bold tracking-wider text-transparent sm:text-7xl">
+      <div className="text-center text-slate-800 dark:text-white">
+        <h1 className="mb-7 bg-gradient-to-r from-emerald-400 to-[#64ACFF] bg-clip-text font-main text-5xl font-bold tracking-wider text-transparent drop-shadow-lg dark:from-[#61F4DE] sm:text-7xl">
           Andrei Spatariu
         </h1>
         <div className="m-auto max-w-mobile font-handwriting text-4xl sm:max-w-full sm:text-5xl">

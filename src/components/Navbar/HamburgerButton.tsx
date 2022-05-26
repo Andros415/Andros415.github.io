@@ -16,17 +16,17 @@ const HamburgerButton = ({
       onClick={() => setIsNavbarExpanded(!isNavbarExpanded)}
     >
       <div
-        className={`h-1 w-full bg-white transition group-hover:bg-teal ${
+        className={`h-1 w-full bg-slate-800 dark:bg-white transition group-hover:bg-teal ${
           isNavbarExpanded ? "translate-y-2 rotate-45" : ""
         }`}
       ></div>
       <div
-        className={`h-1 w-full bg-white transition group-hover:bg-teal ${
+        className={`h-1 w-full bg-slate-800 dark:bg-white transition group-hover:bg-teal ${
           isNavbarExpanded ? "-translate-x-2 opacity-0" : "opacity-100"
         }`}
       ></div>
       <div
-        className={`h-1 w-full bg-white transition group-hover:bg-teal ${
+        className={`h-1 w-full bg-slate-800 dark:bg-white transition group-hover:bg-teal ${
           isNavbarExpanded ? "-translate-y-2 -rotate-45" : ""
         }`}
       ></div>

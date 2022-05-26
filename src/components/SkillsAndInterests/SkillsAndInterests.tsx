@@ -38,7 +38,7 @@ function SkillsAndInterests(): ReactElement {
   const [skillSet, setSkillSet] = useState(DEFAULT_SKILL_SET);
   return (
     <div
-      className="min-h-screen min-w-full scroll-mt-28 text-center text-white"
+      className="min-h-screen min-w-full scroll-mt-28 text-center text-slate-800 dark:text-white"
       id="SkillsAndInterests"
     >
       <h1 className="font-main text-5xl font-bold tracking-wider">

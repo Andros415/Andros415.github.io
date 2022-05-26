@@ -23,7 +23,7 @@ function TimelineItem({
 
   return (
     <div
-      className={`rounded-lg border border-slate-500/50 bg-slate-500/50 p-4 font-main text-white shadow-md backdrop-blur-sm ${
+      className={`rounded-lg border border-slate-500/20 dark:border-slate-500/50 bg-stone-200/50 dark:bg-slate-500/50 p-4 font-main text-slate-800 dark:text-white shadow-md backdrop-blur-sm ${
         gridPositionClasses ? gridPositionClasses : ""
       }`}
     >

@@ -3,10 +3,11 @@ import React, {
   Fragment,
   ReactElement,
   SetStateAction,
+  useContext,
   useEffect,
-  useState,
 } from "react";
 import { Menu, Transition } from "@headlessui/react";
+import { ThemeContext } from "../ThemeProvider";
 
 interface ThemeSelectorOptionProps {
   materialIcon: string;
@@ -31,7 +32,7 @@ const ThemeSelectorOption = ({
       <button
         className={`${
           isActiveTheme
-            ? "cursor-not-allowed text-gray-500"
+            ? "cursor-not-allowed text-stone-400 dark:text-gray-500"
             : "transition-colors hover:text-teal"
         } flex items-center justify-start gap-4 align-middle`}
         onClick={() => setCurrentTheme(materialIcon)}
@@ -46,8 +47,7 @@ const ThemeSelectorOption = ({
 const ThemeSelector = ({
   isNavbarExpanded,
 }: ThemeSelectorProps): ReactElement => {
-  const [currentTheme, setCurrentTheme] = useState("dark_mode");
-
+  const { currentTheme, setCurrentTheme } = useContext(ThemeContext);
   useEffect(() => {
     if (!("theme" in localStorage)) {
       setCurrentTheme("laptop");
@@ -63,6 +63,7 @@ const ThemeSelector = ({
         document.documentElement.classList.remove("dark");
       }
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
@@ -83,7 +84,7 @@ const ThemeSelector = ({
   return (
     <Menu>
       <Menu.Button
-        className="material-icons-outlined text-3xl text-white transition-colors hover:cursor-pointer hover:text-teal"
+        className="material-icons-outlined text-3xl text-slate-800 transition-colors hover:cursor-pointer hover:text-teal dark:text-white dark:hover:text-teal"
         disabled={isNavbarExpanded}
       >
         {currentTheme}
@@ -97,7 +98,7 @@ const ThemeSelector = ({
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
       >
-        <Menu.Items className="absolute top-20 right-2 z-20 flex flex-col space-y-4 rounded-lg bg-slate-800/95 p-5 shadow-md xl:right-[3%] 2xl:right-[6%]">
+        <Menu.Items className="absolute top-20 right-2 z-20 flex flex-col space-y-4 rounded-lg bg-lightBase/95 p-5 shadow-md dark:bg-slate-800/95 xl:right-[3%] 2xl:right-[6%]">
           <ThemeSelectorOption
             materialIcon="light_mode"
             label="Light"
