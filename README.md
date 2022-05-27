@@ -1,4 +1,4 @@
-![Top Banner](.\public\banner.png)
+![Top Banner](https://github.com/Andros415/personal-website/blob/main/public/banner.png)
 
 ## Project Overview
 
