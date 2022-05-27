@@ -1,0 +1,83 @@
+{
+  "short_name": "Andrei S. Website",
+  "name": "Andrei Spatariu's Website",
+  "description": "Personal website for Andrei Spatariu - a web developer based out of Atlanta, Georgia",
+  "icons": [
+    {
+      "src": "./favicons/favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "./favicons/android-chrome-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "./favicons/maskable_favicon.png",
+      "type": "image/png",
+      "sizes": "240x240",
+      "purpose": "maskable"
+    },
+    {
+      "src": "./favicons/android-chrome-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "About Me",
+      "short_name": "About",
+      "description": "Learn about me",
+      "url": "/#About",
+      "icons": [
+        { "src": "./shortcutIcons/about_shortcut.png", "sizes": "48x48" },
+        { "src": "./shortcutIcons/about_shortcut_96.png", "sizes": "96x96" }
+      ]
+    },
+    {
+      "name": "Skills & Interests",
+      "short_name": "Skills",
+      "description": "View my skills and interests",
+      "url": "/#SkillsAndInterests",
+      "icons": [
+        { "src": "./shortcutIcons/skills_shortcut.png", "sizes": "48x48" },
+        {
+          "src": "./shortcutIcons/skills_shortcut_96.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Projects",
+      "short_name": "Project",
+      "description": "View my recent projects",
+      "url": "/#Projects",
+      "icons": [
+        { "src": "./shortcutIcons/projects_shortcut.png", "sizes": "48x48" },
+        {
+          "src": "./shortcutIcons/projects_shortcut_96.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Experience",
+      "short_name": "Experience",
+      "description": "View my career experience so far",
+      "url": "/#Experience",
+      "icons": [
+        { "src": "./shortcutIcons/experience_shortcut.png", "sizes": "48x48" },
+        {
+          "src": "./shortcutIcons/experience_shortcut_96.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#6E78FF",
+  "background_color": "#0f172a"
+}
