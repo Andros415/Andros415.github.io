@@ -2,13 +2,9 @@
 
 ## Project Overview
 
----
-
 This repo contains my very own personal website ✨ as a way to showcase a bit of what I do day-to-day, what I'm delving into, and about me in general 😊.
 
 ## Project Dependencies
-
----
 
 Core Libraries:
 
@@ -22,8 +18,6 @@ Core Libraries:
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 ## Available Scripts
-
----
 
 In the project directory, you can run:
 
