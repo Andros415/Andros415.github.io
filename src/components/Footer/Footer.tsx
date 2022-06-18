@@ -32,7 +32,7 @@ function Footer(): ReactElement {
             altName="LinkedIn Icon"
           />
           <SocialIcon
-            link="mailto:andrei.spatariu4+web@gmail.com"
+            link="mailto:hello@andreispatariu.dev"
             imageSrc={isDarkTheme ? email : emailDark}
             altName="Email Icon"
           />
