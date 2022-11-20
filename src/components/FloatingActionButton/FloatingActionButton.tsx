@@ -8,11 +8,13 @@ function FloatingActionButton(): ReactElement {
       const FAB = document.querySelector("#FAB");
       if (window.scrollY > 350) {
         FAB?.classList.remove("opacity-0");
+        FAB?.classList.remove("cursor-none");
         setDisabled(false);
       } else {
         FAB?.classList.add("opacity-0");
-        setDisabled(true);
+        FAB?.classList.add("cursor-none");
       }
+      window.scrollY === 0 && setDisabled(true);
     });
     return () => {
       window.removeEventListener("scroll", () => {});
@@ -21,7 +23,7 @@ function FloatingActionButton(): ReactElement {
 
   return (
     <div
-      className="fixed right-5 bottom-5 z-10 opacity-0 transition-opacity duration-300"
+      className="fixed right-5 bottom-5 z-10 cursor-none opacity-0 transition-opacity duration-300"
       id="FAB"
     >
       <button
