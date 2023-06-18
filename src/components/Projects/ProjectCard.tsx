@@ -22,7 +22,7 @@ const TemplateProjectCard = (): ReactElement => {
           <div className="h-16 w-16 rounded-full bg-slate-400/50 dark:bg-slate-500/50" />
           <div className="h-16 w-16 rounded-full bg-slate-400/50 dark:bg-slate-500/50" />
         </div>
-        <button className="mx-auto block h-10 w-56 rounded-full bg-gray-400/60 dark:bg-gray-800/60 text-xl" />
+        <button className="mx-auto block h-10 w-56 rounded-full bg-gray-400/60 text-xl dark:bg-gray-800/60" />
         <p className="mx-auto h-4 w-40 rounded-md bg-slate-400/50 dark:bg-slate-500/50" />
       </div>
     </div>
@@ -39,7 +39,7 @@ function ProjectCard({
   const formattedStargazers = project.stargazers_count?.toLocaleString();
 
   return (
-    <div className="mx-auto w-mobile space-y-4 divide-y-2 divide-gray-400/20 rounded-lg border shadow-lg border-slate-500/20 dark:border-slate-500/50 bg-stone-200/50 dark:bg-slate-500/50 p-4 text-left md:w-full">
+    <div className="mx-auto w-mobile space-y-4 divide-y-2 divide-gray-400/20 rounded-lg border border-slate-500/20 bg-stone-200/50 p-4 text-left shadow-lg dark:border-slate-500/50 dark:bg-slate-500/50 md:w-full">
       {loading ? (
         <TemplateProjectCard />
       ) : (
@@ -51,7 +51,7 @@ function ProjectCard({
           <div className="space-y-4">
             {type === "Recent" ? (
               <>
-                <h2 className="pt-2 text-2xl font-light">Languages Used</h2>
+                <h2 className="py-2 text-2xl font-light">Languages Used</h2>
                 <LanguageRow languageURL={project?.languages_url as string} />
               </>
             ) : (
@@ -65,7 +65,7 @@ function ProjectCard({
               </>
             )}
             <button
-              className="mx-auto block rounded-full bg-gray-400/60 dark:bg-gray-800/60 px-12 py-3 text-xl transition-colors hover:bg-gray-500/50 dark:hover:bg-gray-800"
+              className="mx-auto block rounded-full bg-gray-400/60 px-12 py-3 text-xl transition-colors hover:bg-gray-500/50 dark:bg-gray-800/60 dark:hover:bg-gray-800"
               onClick={() => window.open(`${project.url}`, "_blank")}
             >
               <i className="devicon-github-original" />

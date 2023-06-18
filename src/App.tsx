@@ -11,7 +11,7 @@ import FloatingActionButton from "./components/FloatingActionButton";
 
 function App() {
   return (
-    <div className="bg-lightBase bg-lightScheme dark:bg-gradient-to-t dark:from-noir dark:to-slate-900">
+    <div className="bg-lightBase bg-lightScheme dark:bg-gradient-to-t dark:from-noir dark:to-slate-900 md:dark:bg-darkBase md:dark:bg-darkScheme">
       <ThemeProvider>
         <Navbar />
         <Splash />

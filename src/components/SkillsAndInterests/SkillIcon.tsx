@@ -18,7 +18,7 @@ function SkillIcon({
   return (
     <div
       className={`group transition duration-300 sm:hover:scale-110 ${
-        size ? "flex w-32 flex-col justify-evenly" : ""
+        size ? "flex w-32 flex-col justify-center lg:w-auto" : ""
       }`}
     >
       <i
@@ -28,7 +28,7 @@ function SkillIcon({
         style={{ fontSize: size }}
       />
       {caption && (
-        <p className="pointer-events-none font-main text-lg transition group-hover:opacity-100 sm:opacity-0">
+        <p className="pointer-events-none mt-1 font-main text-lg transition group-hover:opacity-100 sm:opacity-0">
           {caption}
         </p>
       )}
