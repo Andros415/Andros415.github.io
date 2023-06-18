@@ -23,11 +23,11 @@ function FloatingActionButton(): ReactElement {
 
   return (
     <div
-      className="fixed right-5 bottom-5 z-10 cursor-none opacity-0 transition-opacity duration-300"
+      className="fixed bottom-5 right-5 z-10 cursor-none opacity-0 transition-opacity duration-300"
       id="FAB"
     >
       <button
-        className="flex h-[56px] w-[56px] items-center justify-center rounded-full bg-emerald-400 drop-shadow-lg transition-colors hover:bg-emerald-500 disabled:cursor-default dark:bg-teal dark:hover:bg-[#47a89b]"
+        className="flex h-[56px] w-[56px] items-center justify-center rounded-full bg-emerald-400 drop-shadow-lg transition-colors hover:bg-emerald-500 disabled:cursor-default dark:bg-teal dark:hover:bg-teal/90"
         onClick={() => window.scrollY > 350 && window.scrollTo(0, 0)}
         disabled={isDisabled}
       >
