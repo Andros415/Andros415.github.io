@@ -98,7 +98,7 @@ const ThemeSelector = ({
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
       >
-        <Menu.Items className="absolute top-20 right-2 z-20 flex flex-col space-y-4 rounded-lg bg-lightBase/95 p-5 shadow-md dark:bg-slate-800/95 xl:right-[3%] 2xl:right-[6%]">
+        <Menu.Items className="absolute right-2 top-20 z-20 flex flex-col space-y-4 rounded-lg bg-lightBase/95 p-5 shadow-md backdrop-blur-sm dark:bg-slate-800/90 md:dark:bg-slate-900/90 xl:right-[3%] 2xl:right-[6%]">
           <ThemeSelectorOption
             materialIcon="light_mode"
             label="Light"

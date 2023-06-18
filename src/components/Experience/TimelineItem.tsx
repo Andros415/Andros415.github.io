@@ -23,14 +23,14 @@ function TimelineItem({
 
   return (
     <div
-      className={`rounded-lg border border-slate-500/20 dark:border-slate-500/50 bg-stone-200/50 dark:bg-slate-500/50 p-4 font-main text-slate-800 dark:text-white shadow-md backdrop-blur-sm ${
+      className={`rounded-lg border border-slate-500/20 bg-stone-200/50 p-4 font-main text-slate-800 shadow-md backdrop-blur-sm dark:border-slate-500/50 dark:bg-slate-500/50 dark:text-white ${
         gridPositionClasses ? gridPositionClasses : ""
       }`}
     >
       <div className="flex items-center justify-between">
         <div className="mr-4">
           <p className="text-lg">{company}</p>
-          <p>{position}</p>
+          <p className="italic">{position}</p>
         </div>
         <div>
           <p className="text-right text-xl md:text-2xl">{yearString}</p>

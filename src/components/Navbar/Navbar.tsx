@@ -28,7 +28,7 @@ function Navbar(): ReactElement {
 
   return (
     <>
-      <nav className="fixed z-20 flex min-w-full items-center shadow-sm justify-between bg-lightBase/95 dark:bg-slate-900/95 p-5 font-handwriting text-3xl text-slate-800 dark:text-white backdrop-blur-sm md:justify-evenly">
+      <nav className="fixed z-20 flex min-w-full items-center justify-between bg-lightBase/95 p-5 font-handwriting text-3xl text-slate-800 shadow-sm backdrop-blur-sm dark:bg-slate-900/95 dark:text-white md:justify-evenly md:dark:bg-darkBase/95">
         <HamburgerButton
           isNavbarExpanded={isNavbarExpanded}
           setIsNavbarExpanded={setIsNavbarExpanded}

@@ -11,7 +11,7 @@ function Experience(): ReactElement {
       <h1 className="text-center font-main text-5xl font-bold tracking-wider">
         Experience
       </h1>
-      <div className="m-4 grid gap-4 md:mx-10 lg:grid-cols-7">
+      <div className="m-4 grid gap-4 md:mx-10 lg:grid-cols-9">
         <TimelineItem
           company="NCR"
           position="Intern"
@@ -40,10 +40,17 @@ function Experience(): ReactElement {
         />
         <TimelineItem
           company="AT&T"
-          position="Software Engineer"
+          position="Software Engineer - TDP"
           startYear="2020"
-          isCurrentJob
+          endYear="2022"
           gridPositionClasses="md:row-start-5 md:col-start-5 md:col-span-3"
+        />
+        <TimelineItem
+          company="Cricket Wireless"
+          position="Software Engineer"
+          startYear="2022"
+          isCurrentJob
+          gridPositionClasses="md:row-start-6 md:col-start-7 md:col-span-3"
         />
       </div>
       <div className="space-y-6">
