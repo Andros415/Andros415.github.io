@@ -17,7 +17,7 @@ function Footer(): ReactElement {
     (currentTheme === "laptop" &&
       window.matchMedia("(prefers-color-scheme: dark)").matches);
   return (
-    <footer className="flex min-w-full items-center justify-center p-5">
+    <footer className="flex min-w-full items-center justify-center p-5 md:mt-10">
       <div className="space-y-3 text-center text-slate-800 dark:text-white">
         <h1 className="font-handwriting text-4xl">Follow me elsewhere</h1>
         <div className="flex items-center justify-evenly pb-2">
