@@ -5,7 +5,7 @@ import Resume from "../../static/Resume.pdf";
 function Experience(): ReactElement {
   return (
     <div
-      className="flex min-h-screen min-w-full scroll-mt-16 flex-col items-center justify-evenly text-slate-800 dark:text-white"
+      className="flex min-h-screen min-w-full scroll-mt-24 flex-col items-center justify-evenly text-slate-800 dark:text-white"
       id="Experience"
     >
       <h1 className="text-center font-main text-5xl font-bold tracking-wider">
