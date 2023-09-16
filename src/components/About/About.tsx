@@ -9,7 +9,7 @@ function About(): ReactElement {
     >
       <div className="hidden -rotate-3 drop-shadow-lg transition hover:rotate-0 hover:scale-105 lg:block">
         <img
-          className="rounded-3xl md:h-80 md:w-80 xl:h-96 xl:w-96"
+          className="h-full rounded-3xl md:w-80 xl:w-96"
           src={profilePic}
           alt="Andrei Spatariu"
         />
