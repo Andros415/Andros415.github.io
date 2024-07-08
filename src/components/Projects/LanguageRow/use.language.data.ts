@@ -1,21 +1,5 @@
 import { useEffect, useState } from "react";
-import { LanguageRowProps } from "./LanguageRow";
-
-type LanguageReturn = {
-  [key: string]: number;
-};
-
-type LanguagePercentSizeObj = {
-  [key: string]: { iconSize: number; percentage: number };
-};
-
-type IconType = "plain" | "original" | "plain-wordmark" | "original-wordmark";
-
-interface useLanguageDataReturn {
-  languagePercentData: LanguagePercentSizeObj;
-  matchIconType: (language: string) => IconType;
-  matchLanguageName: (language: string) => string;
-}
+import { LanguageRowProps, useLanguageDataReturn, LanguagePercentSizeObj, LanguageReturn, IconType } from "./LanguageRow.interface";
 
 const useLanguageData = ({
   languageURL,

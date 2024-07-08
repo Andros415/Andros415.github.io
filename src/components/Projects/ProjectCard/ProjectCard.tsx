@@ -1,12 +1,6 @@
 import React, { ReactElement } from "react";
-import LanguageRow from "./LanguageRow";
-import { GithubProject } from "./use.project.data";
-
-interface ProjectCardProps {
-  project: GithubProject;
-  type: "Recent" | "Starred";
-  loading: boolean;
-}
+import LanguageRow from "../LanguageRow/LanguageRow";
+import { ProjectCardProps } from "./ProjectCard.interface";
 
 const TemplateProjectCard = (): ReactElement => {
   return (

@@ -1,10 +1,6 @@
-import React, { Dispatch, ReactElement } from "react";
+import React, { ReactElement } from "react";
 import { Listbox, Transition } from "@headlessui/react";
-
-interface SkillRowSelectorProps {
-  selectedSkillSet: string;
-  onSelectSkillSet: Dispatch<string>;
-}
+import { SkillRowSelectorProps } from "./SkillRowSelector.interface";
 
 const SkillSetOptions = [
   "Languages & Tools I'm delving into",

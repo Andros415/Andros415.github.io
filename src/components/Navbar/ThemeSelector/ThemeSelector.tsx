@@ -1,24 +1,13 @@
 import React, {
-  Dispatch,
   Fragment,
   ReactElement,
-  SetStateAction,
   useContext,
   useEffect,
 } from "react";
 import { Menu, Transition } from "@headlessui/react";
-import { ThemeContext } from "../ThemeProvider";
+import { ThemeContext } from "../../ThemeProvider";
+import { ThemeSelectorOptionProps, ThemeSelectorProps } from "./ThemeSelector.interface";
 
-interface ThemeSelectorOptionProps {
-  materialIcon: string;
-  label: string;
-  currentTheme: string;
-  setCurrentTheme: Dispatch<SetStateAction<string>>;
-}
-
-interface ThemeSelectorProps {
-  isNavbarExpanded: boolean;
-}
 
 const ThemeSelectorOption = ({
   materialIcon,
