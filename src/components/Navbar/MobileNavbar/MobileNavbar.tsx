@@ -1,16 +1,6 @@
-import React, { Dispatch, ReactElement } from "react";
+import React, { ReactElement } from "react";
 import { HashLink } from "react-router-hash-link";
-
-interface NavbarLink {
-  name: string;
-  link: string;
-}
-
-interface MobileNavbarProps {
-  NavbarLinks: Array<NavbarLink>;
-  isOpen: boolean;
-  onSetNavbarExpanded: Dispatch<boolean>;
-}
+import { MobileNavbarProps } from "./MobileNavbar.interface";
 
 const MobileNavbar = ({
   NavbarLinks,

@@ -1,12 +1,6 @@
 import React, { ReactElement } from "react";
+import { SkillIconProps } from "./SkillIcon.interface";
 
-interface SkillIconProps {
-  name: string;
-  type: "plain" | "original" | "plain-wordmark" | "original-wordmark";
-  size?: string;
-  caption?: string;
-  isColored?: boolean;
-}
 
 function SkillIcon({
   name,

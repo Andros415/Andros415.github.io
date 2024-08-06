@@ -1,6 +1,6 @@
 import React, { ReactElement } from "react";
 import { HashLink } from "react-router-hash-link";
-import Typist from "react-typist";
+import Typist from "react-typist-component";
 
 function Splash(): ReactElement {
   return (
@@ -9,10 +9,11 @@ function Splash(): ReactElement {
         <h1 className="mb-7 bg-gradient-to-r from-emerald-400 to-[#64ACFF] bg-clip-text font-main text-5xl font-bold tracking-wider text-transparent drop-shadow-lg dark:from-[#61F4DE] dark:to-[#64ACFF] sm:text-7xl">
           Andrei Spatariu
         </h1>
-        <div className="m-auto max-w-mobile font-handwriting text-4xl sm:max-w-full sm:text-5xl">
-          <Typist cursor={{ show: false }}>
+        <div className="m-auto max-w-mobile min-h-12 font-handwriting text-4xl sm:max-w-full sm:text-5xl">
+          <Typist>
             <span>Full-stack Web Developer</span>
-            <Typist.Backspace count={25} delay={7500} />
+            <Typist.Delay ms={7500} />
+            <Typist.Backspace count={25} />
             <span>University of Georgia Alumni 🐾</span>
           </Typist>
         </div>

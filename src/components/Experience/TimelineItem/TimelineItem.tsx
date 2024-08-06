@@ -1,13 +1,5 @@
 import React, { ReactElement } from "react";
-
-interface TimelineItemProps {
-  gridPositionClasses?: string;
-  company: string;
-  position: string;
-  isCurrentJob?: boolean;
-  startYear: string;
-  endYear?: string;
-}
+import { TimelineItemProps } from "./TimelineItem.interface";
 
 function TimelineItem({
   gridPositionClasses,

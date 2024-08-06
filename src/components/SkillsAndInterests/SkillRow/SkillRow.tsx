@@ -1,15 +1,8 @@
 import React, { ReactElement } from "react";
-import SkillIcon from "./SkillIcon";
+import SkillIcon from "../SkillIcon/SkillIcon";
+import { SkillSetOptions } from "./SkillRow.enum";
+import { SkillRowProps } from "./SkillRow.interface";
 
-interface SkillRowProps {
-  selectedSkillSet: string;
-}
-
-enum SkillSetOptions {
-  DELVING_IN = "Languages & Tools I'm delving into",
-  DAILY_BASIS = "What I use on a daily basis",
-  OTHER_SKILLS = "Other Languages & Tools I'm skilled in",
-}
 
 function SkillRow({ selectedSkillSet }: SkillRowProps): ReactElement {
   return (

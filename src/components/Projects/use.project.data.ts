@@ -1,19 +1,5 @@
 import { useEffect, useState } from "react";
-
-export interface GithubProject {
-  name: string;
-  description: string;
-  html_url: string;
-  url?: string;
-  stargazers_count: number;
-  updated_at: string;
-  languages_url?: string;
-}
-
-interface useProjectDataReturn {
-  projectData: { Recent: GithubProject[]; Starred: GithubProject[] };
-  loading: boolean;
-}
+import { useProjectDataReturn, GithubProject } from "./Projects.interface";
 
 const useProjectData = (): useProjectDataReturn => {
   const [projectData, setProjectData] = useState({ Recent: [], Starred: [] });

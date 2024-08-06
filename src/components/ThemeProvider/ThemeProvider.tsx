@@ -1,17 +1,11 @@
 import React, {
   createContext,
-  Dispatch,
   PropsWithChildren,
   ReactElement,
   ReactNode,
-  SetStateAction,
   useState,
 } from "react";
-
-interface IThemeContext {
-  currentTheme: string;
-  setCurrentTheme: Dispatch<SetStateAction<string>>;
-}
+import { IThemeContext } from "./ThemeProvider.interface";
 
 const ThemeContext = createContext({} as IThemeContext);
 

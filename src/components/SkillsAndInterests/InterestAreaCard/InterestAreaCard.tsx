@@ -1,10 +1,5 @@
 import React, { ReactElement, useState } from "react";
-
-interface InterestAreaCardProps {
-  icon: string;
-  title: string;
-  description: string;
-}
+import { InterestAreaCardProps } from "./InterestAreaCard.interface";
 
 function InterestAreaCard({
   icon,

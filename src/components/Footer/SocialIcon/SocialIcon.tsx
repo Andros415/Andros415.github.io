@@ -1,10 +1,5 @@
 import React, { ReactElement } from "react";
-
-interface SocialIconProps {
-  link: string;
-  imageSrc: string;
-  altName: string;
-}
+import { SocialIconProps } from "./SocialIcon.interface";
 
 const SocialIcon = ({
   link,

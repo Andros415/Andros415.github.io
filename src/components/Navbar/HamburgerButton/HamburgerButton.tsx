@@ -1,9 +1,5 @@
-import React, { Dispatch, ReactElement, SetStateAction } from "react";
-
-interface HamburgerButtonProps {
-  isNavbarExpanded: boolean;
-  setIsNavbarExpanded: Dispatch<SetStateAction<boolean>>;
-}
+import React, { ReactElement } from "react";
+import { HamburgerButtonProps } from "./HamburgerButton.interface";
 
 const HamburgerButton = ({
   isNavbarExpanded,

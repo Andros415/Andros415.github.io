@@ -1,10 +1,7 @@
 import React, { ReactElement } from "react";
-import SkillIcon from "../SkillsAndInterests/SkillIcon";
+import SkillIcon from "../../SkillsAndInterests/SkillIcon";
 import useLanguageData from "./use.language.data";
-
-export interface LanguageRowProps {
-  languageURL: string;
-}
+import { LanguageRowProps } from "./LanguageRow.interface";
 
 function LanguageRow({ languageURL }: LanguageRowProps): ReactElement {
   const { languagePercentData, matchIconType, matchLanguageName } =
