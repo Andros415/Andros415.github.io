@@ -35,7 +35,7 @@ function SkillRowSelector({
                 className={({ active, selected }) =>
                   `p-1 transition-colors ${
                     active
-                      ? "cursor-pointer rounded-lg bg-black/5 text-teal dark:bg-white/5"
+                      ? "cursor-pointer rounded-lg bg-black/5 text-emerald-500 dark:text-teal dark:bg-white/5"
                       : ""
                   } ${
                     selected
